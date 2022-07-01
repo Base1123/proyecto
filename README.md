@@ -195,11 +195,25 @@ class Conexion{
            
 La cual el codigo que escribimos es una utilidad de consola que puede permitir obtener la información sobre la configuracion y solo utilizamos el define para definir el localhost, el usuari, la contraseña, el nombre de la base de datos, y el charset.
            
+     
+     
+ 10.- Crear las sesiones 
            
-       
-           
+     <main class="container p-4">
+  <div class="row">
+    <div class="col-md-4">
+      <!-- MESSAGES -->
 
-
+      <?php if (isset($_SESSION['message'])) { ?>
+      <div class="alert alert-<?= $_SESSION['message_type']?> alert-dismissible fade show" role="alert">
+        <?= $_SESSION['message']?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <?php session_unset(); } ?>
+      
+ Crear las sesiones la cual utilizamos codigo que nos servira almacenar datos. nos va a permitir memorizar todo los datos la visita al sitio web nos va a permitir acceder en cualquier página.
 
 
 
