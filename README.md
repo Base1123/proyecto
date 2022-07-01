@@ -125,5 +125,7 @@ Lo que hicimos fue crear la clase registro y hicimos la conexion, creamos la fun
 
 
 
+
+
   
   
