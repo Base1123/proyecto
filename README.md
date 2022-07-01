@@ -1,7 +1,7 @@
 # Proyecto Final
 Taller De Base De Datos  
 
-Documentación 
+Documentación M.E.R
 
 1) Crear una tabla entidad llamada usuario con atributos rut, nombre, apellido, email, contraseña. De la entidad "usuario" a la entidad juegos se forma una relación 1:N.
 
