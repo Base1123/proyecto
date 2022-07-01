@@ -152,7 +152,35 @@ class Registro extends Conexion{
 3) Creamos la opcion Dedicacion a jugar con sus opciones la cual es de 0 a 1 mes, de 1 a 3 meses, de 0 a 1 meses, de 6 a 9 meses y 10 meses o más.
 
 
-8.- Crear el archivo config.php
+8.- Crear el archivo db.php que es la base de datos
+           
+     <?php
+
+require_once("config.php");
+
+class Conexion{
+
+    public $conexion_db;
+
+    public function __construct(){
+        $this->conexion_db=mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+        if ($this->conexion_db->connect_errno) 
+            {
+                echo "Fallo al conectar a MySQL: " . $this->conexion_db->connect_error;
+                return;
+            }
+    }
+}
+
+?>
+           
+ Crear  el require_once la cual incluye y evalua el fichero especificado durante la ejecución del script. y creamos conexion con el codigo class, que es para crear clases en php, y luego la funcion con los nombres de host, user, pass, name. luego en el echo escribimos el "fallo al conextar a Mysql" en caso que no funcione nos dara error.
+           
+           
+           
+           
+ 
+9.- Crear el archivo config.php
            
      <?php
 
@@ -166,7 +194,6 @@ class Registro extends Conexion{
            
            
 La cual el codigo que escribimos es una utilidad de consola que puede permitir obtener la información sobre la configuracion y solo utilizamos el define para definir el localhost, el usuari, la contraseña, el nombre de la base de datos, y el charset.
-           
            
            
        
