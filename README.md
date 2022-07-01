@@ -118,10 +118,59 @@ class Registro extends Conexion{
     public $contrasena;
     public $politicas;
 
-Lo que hicimos fue crear la clase registro y hicimos la conexion, creamos la funcion de _construct la cual esta el rut, nombre, apellido, email, contraseña y politicas y también crear insertarRegistro la cual es Rut, Nombre, Apellido, Email, Contraseña, Y Politicas, luego escribimos la  conexion la cual con el INSERT TO ceamaos el usuario, el rut, nombre, apellido, email, contrasena y politicas y por ultimo creamos el registo con el $registro= new registro la cual el $ sirve para estructurar y desplegar una pagina web.
+1) Crear la clase registro y hicimos la conexion, creamos la funcion de _construct la cual esta el rut, nombre, apellido, email, contraseña y politicas y también crear insertarRegistro la cual es Rut, Nombre, Apellido, Email, Contraseña, Y Politicas, luego escribimos la  conexion la cual con el INSERT TO ceamaos el usuario, el rut, nombre, apellido, email, contrasena y politicas y por ultimo creamos el registo con el $registro= new registro la cual el $ sirve para estructurar y desplegar una pagina web.
 
 
+7.- Crear el archivo test.php 
 
+ <title>Formulario para jugadores</title>
+</head>
+<body>
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col col-md-12">
+        <h1 class="">Llena este formulario para asignarte un juego</h1>
+        <br>
+        <form action="verjuego.php" method="POST">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Categoria</option>
+                <option value="1.00">Accion</option>
+                <option value="2.00">Aventura</option>
+                <option value="3.00">Conduccion</option>
+                <option value="4.00">Deportes</option>
+                <option value="5.00">Estrategia</option>
+                <option value="6.00">Rol</option>  
+                <option value="7.00">Puzzle</option>
+                <option value="8.00">Shooter</option>
+                <option value="9.00">Simulacion</option>
+                <option value="10.00">Vuelo</option>
+            </select>
+
+
+1) Escribimos el codigo select la cual os permita seleccionar cualquier tipo de cosas, y escribimos La Categoria y sus opciones que son Accion, Aventura, Conducción, Deportes, Estrategias, Rol Puzzle, Shooter, Simulacion, Vuelo.
+2) Creamos el Tipo de Jugador y seleccionamos 4 alternativas la cual queramos escoger y 
+3) Creamos la opcion Dedicacion a jugar con sus opciones la cual es de 0 a 1 mes, de 1 a 3 meses, de 0 a 1 meses, de 6 a 9 meses y 10 meses o más.
+
+
+8.- Crear el archivo config.php
+           
+     <?php
+
+    define("DB_HOST", "localhost:3306");
+    define("DB_USER", "root");
+    define("DB_PASS", "");
+    define("DB_NAME", "proyecto_2022_");
+    define("DB_CHARSET", "utf8");
+
+?>
+           
+           
+La cual el codigo que escribimos es una utilidad de consola que puede permitir obtener la información sobre la configuracion y solo utilizamos el define para definir el localhost, el usuari, la contraseña, el nombre de la base de datos, y el charset.
+           
+           
+           
+       
+           
 
 
 
