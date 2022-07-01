@@ -3,11 +3,11 @@ Taller De Base De Datos
 
 Documentación 
 
-1) Crear una tabla entidad llamada usuario con atributos rut, nombre, apellido, email, contraseña 
+1) Crear una tabla entidad llamada usuario con atributos rut, nombre, apellido, email, contraseña. De la entidad "usuario" a la entidad juegos se forma una relación 1:N.
 
-2) Crear otra tabla llamada juegos con los atributos id, nombre, score y están conectadas con un N:N al unirlas al diagrama se creo otra tabla llamada usuario_has_juegos 
+2) Crear otra tabla llamada juegos con los atributos id, nombre, score y están conectadas con un N:N al unirlas al diagrama se creo otra tabla llamada usuario_has_juegos. De la entidad "juegos" a la entidad usuario se forma una relacion 1:N 
 
-Crear base de datos
+1) Crear base de datos
 
 1.- Crear tabla entidad llamada usuario_eliminados y escribimos los atributos la cuales son rut y su tipo de datos es varchar(13), Nombre y su tipo de datos es varchar(30), Apellido y su tipo de datos es varchar(30), Email y su tipo de datos es varchar(45), Fecha y su tipo de datos es (date), Hora y su tipo de datos es (time). y es para que se guarden los datos que se van eliminando 
 
@@ -20,13 +20,13 @@ Crear base de datos
 5.- Crear otra tabla llamada juegos con atributos son id_juegos y su tipo de datos es tinyint(4), Nombre y su tipo de datos es varchar(56), Score y su tipo de datos es decimal(4.2).
 
 
-Documentación del Proyecto Final De Programaci
+2) Documentación del Proyecto Final De Programación
 
 1.- Lo que hicimos fue crear un mer con entidad llamada usuario y atributos llamada rut, nombre, apellido, email. contrasena y creamos otra tabla llamada juegos con los atributos id, nombrem score y al unirlas con el N:N se creo otra tabla llamada usuario_has_juegos la cual se va poder conectar la entidad y para saber como se relaciona las tablas. 
 
 2.- Al crear la base de datos creamos la entidad llamada usuario_eliminados llamados con nombre rut, nombre, apellido, email, fecha, y creamos otra tabla llamada historicos_usuarios y los atributos son rut, nombre, apellido, email, fecha y hora. y creamos otra tabla entidad llamada usuario, la cual tiene atributos llamadas rut, nombre, apellido, email, contrasena, politicias y otra tabla llamada usuario_has_juegos que tiene atributos llamadas usuario_Rut, juegos_id_juegos y creamos la ultima tabla de entidad llamada juegos y tiene atributos la cual son id_juegos, nombre y score, y cada uno tiene sus tipos de datos.
 
-Documentación PHP del Proyecto Final 
+3) Documentación PHP del Proyecto Final 
 
 1.- En el primer paso creamos el archivo del Login.php 
 
@@ -95,7 +95,7 @@ Documentación PHP del Proyecto Final
 
     </form>
        
-Escribimos el codigo select la cual os permita seleccionar cualquier tipo de cosas, y escribimos La Categoria y sus opciones que son Accion, Aventura, Conducción, Deportes, Estrategias, Rol Puzzle, Shooter, Simulacion, Vuelo.
+Escribimos el código select la cual os permita seleccionar cualquier tipo de cosas, y escribimos La Categoria y sus opciones que son Accion, Aventura, Conducción, Deportes, Estrategias, Rol Puzzle, Shooter, Simulacion, Vuelo.
 Luego creamos el Tipo de Jugador y seleccionamos 4 alternativas la cual queramos escoger y después creamos la opcion Dedicacion a jugar con sus opciones la cual es de 0 a 1 mes, de 1 a 3 meses, de 0 a 1 meses, de 6 a 9 meses y 10 meses o más.
 
     
@@ -118,10 +118,10 @@ class Registro extends Conexion{
     public $contrasena;
     public $politicas;
 
-1) Crear la clase registro y hicimos la conexion, creamos la funcion de _construct la cual esta el rut, nombre, apellido, email, contraseña y politicas y también crear insertarRegistro la cual es Rut, Nombre, Apellido, Email, Contraseña, Y Politicas, luego escribimos la  conexion la cual con el INSERT TO ceamaos el usuario, el rut, nombre, apellido, email, contrasena y politicas y por ultimo creamos el registo con el $registro= new registro la cual el $ sirve para estructurar y desplegar una pagina web.
+a_ Crear la clase registro y hicimos la conexion, creamos la funcion de _construct la cual esta el rut, nombre, apellido, email, contraseña y politicas y también crear insertarRegistro la cual es Rut, Nombre, Apellido, Email, Contraseña, Y Politicas, luego escribimos la  conexion la cual con el INSERT TO ceamaos el usuario, el rut, nombre, apellido, email, contrasena y politicas y por ultimo creamos el registo con el $registro= new registro la cual el $ sirve para estructurar y desplegar una pagina web.
 
 
-7.- Crear el archivo test.php 
+7.- Creamos el archivo test.php y en el mismo le asignamos el valor que tendrá cada opción que el usuario podrá seleccionar, para aquello hacemos uso de lo siguiente: 
 
  <title>Formulario para jugadores</title>
 </head>
@@ -147,12 +147,12 @@ class Registro extends Conexion{
             </select>
 
 
-1) Escribimos el codigo select la cual os permita seleccionar cualquier tipo de cosas, y escribimos La Categoria y sus opciones que son Accion, Aventura, Conducción, Deportes, Estrategias, Rol Puzzle, Shooter, Simulacion, Vuelo.
-2) Creamos el Tipo de Jugador y seleccionamos 4 alternativas la cual queramos escoger y 
-3) Creamos la opcion Dedicacion a jugar con sus opciones la cual es de 0 a 1 mes, de 1 a 3 meses, de 0 a 1 meses, de 6 a 9 meses y 10 meses o más.
+a) Escribimos el codigo select la cual os permita seleccionar cualquier tipo de cosas, y escribimos La Categoria y sus opciones que son Accion, Aventura, Conducción, Deportes, Estrategias, Rol Puzzle, Shooter, Simulacion, Vuelo.
+b) Creamos el Tipo de Jugador y seleccionamos 4 alternativas la cual queramos escoger y 
+c) Creamos la opcion Dedicacion a jugar con sus opciones la cual es de 0 a 1 mes, de 1 a 3 meses, de 0 a 1 meses, de 6 a 9 meses y 10 meses o más.
 
 
-8.- Crear el archivo db.php que es la base de datos
+8.- Conectamos la base de datos a través del archivo bd.php, usando lo siguiente:
            
      <?php
 
@@ -213,9 +213,5 @@ La cual el codigo que escribimos es una utilidad de consola que puede permitir o
       </div>
       <?php session_unset(); } ?>
       
- Crear las sesiones la cual utilizamos codigo que nos servira almacenar datos. nos va a permitir memorizar todo los datos la visita al sitio web nos va a permitir acceder en cualquier página.
+ Crear las sesiones la cual utilizamos como codigo que nos servirá almacenar datos. Nos va a permitir memorizar todos los datos, la visita al sitio web nos va a permitir acceder en cualquier página.
 
-
-
-  
-  
