@@ -30,21 +30,13 @@ Documentación PHP
 
 1.- En el primer paso creamos el archivo del Login.php 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" rel='text/css'>
+   <link rel="stylesheet" href="style.css" rel='text/css'>
     <title>Inicio Sesión</title>
 </head>
 <body>
-  
- Escribimos html y seleccionamos html:5 y luego en <title> escribimos el "inicio sesión" con el codigo </title>
-    
     <form  action="validar.php" class="form-register" method="POST">
         <h4>Iniciar Sesion</h4>
-           <input class="controls" type="email" name="Email" id="Email" placeholder="Ingrese su correo">
+        <input class="controls" type="email" name="Email" id="Email" placeholder="Ingrese su correo">
         <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su contraseña">
         <label class="form-check">
         <button type="submit" class="btn btn-danger" >Iniciar sesion</button>
@@ -56,19 +48,47 @@ Documentación PHP
 2.- Luego escribimos el codigo <form action="validad.php" para validar el inicio de sesion luego en <h4> escribimos el iniciar sesion la cual nos permitira iniciar sesion, luego escribimos <input la cual sirve crear controles interactivos, y escribimos el tipo la cual es email, y el nombre, y en placeholder escribimos que "Ingrese su correo" luego creamos otro input y el tipo se llama password y nombre contraseña. y en placeholder la cual sirve para informar al usuario de que debe escribir en un campo en el formulario y escribiremos "Ingrese su contraseña" luego escribimos el codigo <button y escribimos "Iniciar Sesion" luego creamos un formulario de registro.php y escribimos el ¿Has olvidado la contraseña?
         
         
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" rel='text/css'>
-    <title>Formulario de registro</title>
-</head>
-<body>
-    <form action="insertarRegistro.php" class="form-register" method="post">
-        <h4>Crear Cuenta </h4>
-        
- 3.- En registro 
+ 3.- Creamos un achivo de registro.php, la cual crearemos el formulario de registro y luego creamos un codigo la cual permita el crear la cuenta. 
+ 
+  <input class="controls" type="text" name="Rut" id="Run" placeholder="Ingrese su Rut">
+        <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su Nombre">
+        <input class="controls" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su Apellidos">
+        <input class="controls" type="email" name="Email" id="Email" placeholder="Ingrese un correo">
+        <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese una contraseña">
+        </div>
+            <div class="form-check" style="margin:4px 8px 0px 12px">
+                <input class="form-check-input" type="checkbox" value="Acepto las politicas y condiciones" name="politicas" id="politicas" required>
+                    <label class="form-check-label" for="flexCheckIndeterminate" style="margin: 0px 0px 0px 3px" required>
+                        Acepta las condiciones y politicas de uso
+                    </label>
+            </div><br>
+        <button type="submit" name="registrar" class="btn btn-danger" >Registrar</button>
+        <br>
+        <p><a href="login.php">¿Ya tengo cuenta?</a></p>
+
+    </form>
+
+    
+</body>
+</html>
+
+
+4.- Luego utilizamos el codigo que permita crear el rut, y escribimos el "Ingrese su rut", luego creamos el nombre, apellido, el email, y contraseña para que aparezca en pantalla cuando accedamos al registro. 
+Luego creamos las politicias la cual nos permita aceptar las condiciones y las politicas. 
+
+<form action="test.php" method="post">
+    <h1>BIENVENIDO</h1>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="submit">Iniciar Test</button>
+    </div>
+</form>
+<br>
+<br>
+<form action="verjuego.php" method="post">
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="submit">Ver Juego</button>
+    </div>
+
        
      
         
