@@ -94,6 +94,9 @@ Documentación PHP del Proyecto Final
         <p><a href="login.php">¿Ya tengo cuenta?</a></p>
 
     </form>
+       
+Escribimos el codigo select la cual os permita seleccionar cualquier tipo de cosas, y escribimos La Categoria y sus opciones que son Accion, Aventura, Conducción, Deportes, Estrategias, Rol Puzzle, Shooter, Simulacion, Vuelo.
+Luego creamos el Tipo de Jugador y seleccionamos 4 alternativas la cual queramos escoger y después creamos la opcion Dedicacion a jugar con sus opciones la cual es de 0 a 1 mes, de 1 a 3 meses, de 0 a 1 meses, de 6 a 9 meses y 10 meses o más.
 
     
 </body>
@@ -115,11 +118,10 @@ class Registro extends Conexion{
     public $contrasena;
     public $politicas;
 
-Lo que hicimos fue crear la clase registro c
-   
-                                             
-                                           
-                                             
+Lo que hicimos fue crear la clase registro y hicimos la conexion, creamos la funcion de _construct la cual esta el rut, nombre, apellido, email, contraseña y politicas y también crear insertarRegistro la cual es Rut, Nombre, Apellido, Email, Contraseña, Y Politicas, luego escribimos la  conexion la cual con el INSERT TO ceamaos el usuario, el rut, nombre, apellido, email, contrasena y politicas y por ultimo creamos el registo con el $registro= new registro la cual el $ sirve para estructurar y desplegar una pagina web.
+
+
+
 
 
 
