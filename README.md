@@ -1,4 +1,4 @@
-# proyecto
+# Proyecto Final
 Taller De Base De Datos  
 
 Documentación 
@@ -47,8 +47,35 @@ Documentación PHP del Proyecto Final
         
 2.- Luego escribimos el codigo <form action="validad.php" para validar el inicio de sesion luego en <h4> escribimos el iniciar sesion la cual nos permitira iniciar sesion, luego escribimos <input la cual sirve crear controles interactivos, y escribimos el tipo la cual es email, y el nombre, y en placeholder escribimos que "Ingrese su correo" luego creamos otro input y el tipo se llama password y nombre contraseña. y en placeholder la cual sirve para informar al usuario de que debe escribir en un campo en el formulario y escribiremos "Ingrese su contraseña" luego escribimos el codigo <button y escribimos "Iniciar Sesion" luego creamos un formulario de registro.php y escribimos el ¿Has olvidado la contraseña?
         
-        
-3.- Creamos un achivo de registro.php, la cual crearemos el formulario de registro y luego creamos un codigo la cual permita el crear la cuenta. 
+
+<form action="test.php" method="post">
+    <h1>BIENVENIDO</h1>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="submit">Iniciar Test</button>
+    </div>
+</form>
+<br>
+<br>
+<form action="verjuego.php" method="post">
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="submit">Ver Juego</button>
+    </div>
+   
+ 3.- Luego creamos el archivo landing.php y escribimos el <h1> y el H1 es una etiqueta que se utiliza para identificar aquellas frases que conforman el título principal de un contenido de una página web. y escribimos "BIENVENIDO" la cual es el titulo, y creamos el "Iniciar test" con el codigo type"submit" y al entrar al Iniciar test nos aparecera el formulario del juego, y luego creamos el botton de "Ver juego" la cual nos permitira ver todo tipo de juego la cual queramos.
+   
+ 
+ 4.- Crear un archivo de ver.juegos.php la cual nos permitira ver la categoria, tipo de jugador, el valor dedicacional jugar, el valor historial personal, valor conocientos externos el valor pericia, y el valor preferencial
+   
+   if (isset($_POST["Enviar"])){ 
+   $valorCategoria = $_POST["ValorCategoria"];
+   $valortipodejugador = $_POST["valortipodeJugador"];
+   $valordedicacionaljugar = $_POST["valorhistorialpersonal"];
+   $valorconocimientosexternos = $_POST["valorConocimientosExternos"];
+   $valorpericia = $_POST["valorpericia"];
+   $valorPreferenciaPersona = $_POST["valorpreferenciaspersonales;
+   
+ 
+ 5.- Creamos un achivo de registro.php, la cual crearemos el formulario de registro y luego creamos un codigo la cual permita el crear la cuenta. 
  
   <input class="controls" type="text" name="Rut" id="Run" placeholder="Ingrese su Rut">
         <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su Nombre">
@@ -72,38 +99,23 @@ Documentación PHP del Proyecto Final
 </body>
 </html>
 
-
-4.- Luego utilizamos el codigo que permita crear el rut, y escribimos el "Ingrese su rut", luego creamos el nombre, apellido, el email, y contraseña para que aparezca en pantalla cuando accedamos al registro. 
+Utilizamos el codigo que permita crear el rut, y escribimos el "Ingrese su rut", luego creamos el nombre, apellido, el email, y contraseña para que aparezca en pantalla cuando accedamos al registro. 
 Luego creamos las politicias la cual nos permita aceptar las condiciones y las politicas. 
 
 
-<form action="test.php" method="post">
-    <h1>BIENVENIDO</h1>
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="submit">Iniciar Test</button>
-    </div>
-</form>
-<br>
-<br>
-<form action="verjuego.php" method="post">
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="submit">Ver Juego</button>
-    </div>
-   
- 5.- Luego creamos el archivo landing.php y escribimos el <h1> y el H1 es una etiqueta que se utiliza para identificar aquellas frases que conforman el título principal de un contenido de una página web. y escribimos "BIENVENIDO" la cual es el titulo, y creamos el "Iniciar test" con el codigo type"submit" y al entrar al Iniciar test nos aparecera el formulario del juego, y luego creamos el botton de "Ver juego" la cual nos permitira ver todo tipo de juego la cual queramos.
-   
- 
- 6.- Crear un archivo de ver.juegos.php la cual nos permitira ver la categoria, tipo de jugador, el valor dedicacional jugar, el valor historial personal, valor conocientos externos el valor pericia, y el valor preferencial
-   
-   if (isset($_POST["Enviar"])){ 
-   $valorCategoria = $_POST["ValorCategoria"];
-   $valortipodejugador = $_POST["valortipodeJugador"];
-   $valordedicacionaljugar = $_POST["valorhistorialpersonal"];
-   $valorconocimientosexternos = $_POST["valorConocimientosExternos"];
-   $valorpericia = $_POST["valorpericia"];
-   $valorPreferenciaPersona = $_POST["valorpreferenciaspersonales;
-   
- 
+6.- Creamos el archivo insertarRegistro.php
+
+include("db.php");
+
+class Registro extends Conexion{
+    public $Rut;
+    public $Nombre;
+    public $Apellido;
+    public $Email;
+    public $contrasena;
+    public $politicas;
+
+Lo que hicimos fue crear la clase registro c
    
                                              
                                            
